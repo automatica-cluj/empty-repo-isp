@@ -1,5 +1,6 @@
 package lab.template;
 
+import org.junit.Assert;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -15,9 +16,11 @@ public class ExampleTest {
     }
 
     @Test
-    public void testSubstract() {
-        assertEquals("Should substract 2 numbers", 5, Example.substract(15, 10));
-    }
+    public void testSubtract() {assertEquals("Should subtract 2 numbers", 5, Example.subtract(15, 10)); }
 
+    @Test
+    public void testMultiply() { assertEquals("Should multiply 2 numbers", 150, Example.multiply(15,10)); }
+    @Test
+    public void testDivide() { assertEquals("Should divide 2 numbers", 1.5, Example.divide(15.0F, (float) 10.0F), 0.001); }
 }
 //implementati inmultire si impartire
